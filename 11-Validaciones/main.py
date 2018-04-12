@@ -11,7 +11,7 @@ def index():
 @app.route('/contacto', methods=['GET','POST'])
 def contacto():
 	comment_form = forms.comentarioForm(request.form)	
-	if request.method == 'POST':
+	if request.method == 'POST' and comment_form.validate():
 		print comment_form.username.data
 		print comment_form.comment.data
 		print comment_form.email.data
