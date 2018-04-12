@@ -1,0 +1,9 @@
+{% macro mono() %}
+	<div class="card" style="width: 18rem;">
+
+  <img class="card-img-top" src="{{url_for('static',filename='img/mono.png')}}" alt="El mono">
+  <div class="card-body">
+    <p class="card-text"><b>Usando un macro</b> - Esta es la imagen de un mono, estoy usando una card para mostrarlo.</p>
+  </div>
+</div>
+{% endmacro %}
