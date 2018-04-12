@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Mi primer template</title>
+</head>
+<body>
+	<h1>Hola {{nombre}}!!!</h1>
+	<br>
+	{% if edad>=18  and edad!='' %}
+	<p>Es mayor de edad</p>
+	{% endif %}
+
+<br>
+	{% for item in myList %}
+	<p>{{item}}</p>
+	{% endfor %}
+
+
+</body>
+</html>
